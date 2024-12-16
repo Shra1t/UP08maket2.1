@@ -1,0 +1,521 @@
+@font-face {
+    font-family: "LibreFranklin";
+    src: url("fonts/Libre_FranklinTenor_Sans/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "TenorSans";
+    src: url("fonts/Libre_FranklinTenor_Sans/Tenor_Sans/TenorSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceSerifPro";
+    src: url("fonts/SourceSerifPro/SourceSerifPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LibreBold";
+    src: url("fonts/Libre_FranklinTenor_Sans/Libre_Franklin/static/LibreFranklin-Bold.ttf");
+}
+
+
+
+/* for-all start */
+h1 {
+    width: 80%;
+    font-family: "TenorSans";
+    font-size: 26px;
+}
+
+h3 {
+    width: 100%;
+    font-family: "TenorSans";
+    font-size: 20px;
+    color: #000000;
+    margin-top: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* for-all end */
+
+/* header start */
+header .container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.headlogo {
+    display: flex;
+    margin: 30px auto;
+    margin-left: 0;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0;
+    transition: all 0.3s ease-out;
+}
+
+.active .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px 6px);
+}
+
+.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px 6px);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu{
+    font-family: "LibreFranklin";
+    gap: 50px;
+    display: flex;
+    margin: 35px 20px 0px 770px;
+}
+
+/* header end */
+
+/* main start */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.slideimg {
+    width: 100%;
+    display: none;
+}
+.active {
+    display: block;
+}
+.arrow {
+    position: absolute;
+    top: 40%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.left-arrow {
+    left: 20px;
+}
+.right-arrow {
+    right: 125px;
+}
+.arrow img {
+    width: 30px;
+    height: auto;
+}
+
+.smalltext {
+    font-family: "SourceSerifPro";
+    font-size: 16px;
+    color: #666666;
+    display: flex;
+    margin-top: 20px;
+}
+.by {
+    font-family: "LibreBold";
+    font-size: 10px;
+    color: #000000;
+    display: flex;
+    margin-top: 20px;
+}
+.text_grey {
+    color: #999999;
+    font-family: "LibreFranklin";
+    font-size: 10px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.startscreen {
+    display: flex;
+    margin-top: 55px;
+}
+.NewBig {
+    width: 430px;
+    padding-left: 20px;
+    display: block;
+}
+.startscreen h1 {
+    margin-top: 20px;
+}
+
+/* posts start */
+.posts {
+    padding: 70px 0 50px 0;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+.new {
+    width: 387px;
+}
+
+.latestnews {
+    border-bottom: 1px solid #E6E6E6;
+}
+.zagolovok {
+    color: #999999;
+    font-family: "LibreFranklin";
+    font-size: 10px;
+    padding-bottom: 30px;
+    padding-top: 90px;
+}
+.latestnews_all {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.latestnew {
+    width: 285px;
+}
+
+.latestnew img{
+    width: 100%;
+}
+
+.button1 {
+    width: 205px;
+    font-family: "LibreFranklin";
+    color: black;
+    margin: 20px auto;
+    background-color: white;
+    font-size: 10px;
+    display: block;
+    padding: 19px;
+}
+
+
+.featured {
+    padding: 40px 0 90px;
+}
+.featurednews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.featurednew {
+    width: 590px;
+}
+.featurednew img{
+    width: 100%;
+}
+/* main end */
+
+/* footer start */
+
+footer {
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 90px 0 120px 0;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: "TenoraSans";
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.rights {
+    font-size: 10px;
+    color: #666666;
+    margin: 0;
+}
+
+.line3 {
+    border: 0;
+    height: 1px;
+    background-color: #4D4D4D;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.category-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.categories p {
+    font-size: 10px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    font-size: 10px;
+    color: #666666;
+    padding-bottom: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #666666;
+    background-color: #CCCCCC;
+    color: #000000;
+    font-size: 14px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #666666;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter button:hover {
+    background-color: #666666;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.info {
+    margin-right: 67px;
+}
+
+.follow {
+    margin: 0 70px;
+}
+
+.template {
+    margin-left: 80px;
+}
+
+.footer-info p {
+    font-size: 10px;
+    color: #666666;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+/* footer end */
+
+/* Adaptive layout */
+@media screen and (min-width: 375px) and (max-width: 725px) {
+    header .menu{
+        display: none;
+        margin: 0;
+        gap: 20px;
+    }
+    header .container {
+        width: 100%;
+    }
+    .container {
+        padding-left: 10px;
+        width: calc(100% - 10px);
+        flex-wrap: wrap
+    }
+    .footer-info {
+        width: 100%;
+    }
+    .container .startscreen {
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+    }
+    .button1 {
+        width: 100%;
+    }
+    .content .category-group{
+        width: 100%;
+        gap: 15px;
+    }
+    .slideimg{
+        width: calc(100% - 100px);
+    }
+    .latestnews {
+        width: 95%;
+        padding-right: 10px;
+    }
+    .latestnew{
+        width: 100%;
+    }
+    .posts {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .new img{
+        width: 100%;
+    }
+    .featured {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .featurednew {
+        width: 95%;
+    }
+    nav{
+        width: 100%;
+    }
+    .follow{
+        margin: 0 20px 0 20px;
+    }
+    .template{
+        margin: 0;
+    }
+    .new{
+        width: 95%;
+    }
+    .info{
+        margin: 0;
+    }
+    .NewBig {
+        width: 100%;
+        padding-left: 10px;
+    }
+    /* headlines */
+    h1 {
+        width: 100%;
+        font-family: "TenorSans";
+        font-size: 22px;
+    }
+    h3 {
+        width: 100%;
+        font-family: "TenorSans";
+        font-size: 20px;
+        color: #000000;
+        margin-top: 15px;
+    }
+
+    /* text */
+    .smalltext {
+        width: 100%;
+        font-family: "SourceSerifPro";
+        font-size: 16px;
+        color: #666666;
+        display: flex;
+        margin-top: 20px;
+    }
+    .by {
+        width: 100%;
+        font-family: "LibreBold";
+        font-size: 10px;
+        color: #000000;
+        display: flex;
+        margin-top: 20px;
+    }
+    .text_grey {
+        width: 100%;
+        color: #999999;
+        font-family: "LibreFranklin";
+        font-size: 10px;
+        display: flex;
+        margin-top: 15px;
+    }
+    .newsletter p {
+        width: 100%;
+        font-size: 10px;
+        color: #666666;
+        padding-bottom: 15px;
+    }
+    .categories p {
+        width: 100%;
+        font-size: 10px;
+        color: #666666;
+        margin-bottom: 25px;
+    }
+    .categories li{
+        width: 100%;
+        font-size: 11px;
+    }
+
+    /* hamburger */
+    .hamburger{
+        cursor: pointer;
+        display: block;
+        z-index: 2;
+    }
+    .menu.show-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: pink;
+        top: 0;
+        margin: 0;
+    }
+}
